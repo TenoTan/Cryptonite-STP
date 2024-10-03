@@ -76,5 +76,17 @@ pwn.college{Esr_d0Q19qWtFMlJlAmXKTchwEL.dhDN1QDLyUDN1czW}
 
 ## implicit relative paths, from /
 
+### About Relative Paths:
+* If my cwd is `/`, then a relative path to the file is `tmp/a/b/my_file`.
+* If my cwd is `/tmp`, then a relative path to the file is `a/b/my_file`.
+* If my cwd is `/tmp/a/b/c`, then a relative path to the file is `../my_file`. The `..` refers to the parent directory.
 
+In the challenge, it is implied that we got to the `/` directory to run the command. Once we are already in the root (`/`) directory, we don't need to run `/challenge/run` again, because we are already in the root directory.
+
+```
+cd /challenge/run
+cd /
+challenge/run
+```
+The output gave us the flag.
 
