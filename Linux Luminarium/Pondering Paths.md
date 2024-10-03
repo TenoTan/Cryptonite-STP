@@ -20,3 +20,25 @@ Correct!!!
 /challenge/run is an absolute path! Here is your flag:
 pwn.college{sKdW3QIU2dXgbtV9Azj_CLs8lA_.dVDN1QDLyUDN1czW}
 ```
+## Position Thy Self
+This challenge involved going to a specific directory to acess the flag using `/challenge/run`. 
+On running the terminal, I tried going into the directory directly, and got the following result:
+```
+hacker@paths~position-thy-self:~$ /challenge/run
+Incorrect...
+You are not currently in the /proc/68 directory.
+Please use the `cd` utility to change directory appropriately.
+```
+After reading the msg carefully, I noticed it mentioned not being in the `/proc/68` directory. I then went to the given directory.
+```
+hacker@paths~position-thy-self:~$ cd /proc/68
+hacker@paths~position-thy-self:/proc/68$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{QL_pyrPdIpnL_5JTD4pnsu34C7B.dZDN1QDLyUDN1czW}
+
+```
+Flag found!
+
+
