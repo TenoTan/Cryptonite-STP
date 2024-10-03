@@ -1,9 +1,9 @@
-#The very basics of Linux Commands
+# The very basics of Linux Commands
 I set up my pwn environment by establishing an ssh connection
-##Intro to Commands
+## Intro to Commands
 This challenge was direct and required a simple 'hello' commands to generate the flag.
-##Intro to Arguments
-###Arguments
+## Intro to Arguments
+### Arguments
 Arguments are the subsequent words entered after the command
 `echo Hello`
 Command: _echo_
