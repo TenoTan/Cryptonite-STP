@@ -90,3 +90,17 @@ challenge/run
 ```
 The output gave us the flag.
 
+## Explicit Relative Paths, from /
+
+Relative path: `.`
+
+```
+hacker@paths~explicit-relative-paths-from-:~$ cd /
+hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
+Correct!!!
+./challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{c3oBuD4SY_p1ANFQqoiUWK1aeHA.dBTN1QDLyUDN1czW}
+```
+
+##
