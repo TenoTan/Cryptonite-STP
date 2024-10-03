@@ -103,4 +103,21 @@ Here is your flag:
 pwn.college{c3oBuD4SY_p1ANFQqoiUWK1aeHA.dBTN1QDLyUDN1czW}
 ```
 
-##
+## Implicit Relative Path
+Linux explicitly avoids automatically looking in the current directory when you provide a "naked" path.
+
+I made multiple mistakes in trying to figure out the right way to call the relative path, but in the end, `./run` worked.
+```
+hacker@paths~implicit-relative-path:/challenge$ run
+ssh-entrypoint: run: command not found
+hacker@paths~implicit-relative-path:/challenge$ /run
+ssh-entrypoint: /run: Is a directory
+hacker@paths~implicit-relative-path:/challenge$ .run
+ssh-entrypoint: .run: command not found
+hacker@paths~implicit-relative-path:/challenge$ ./run
+Correct!!!
+./run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{Ql1V4vsCcIhMD5ZY6Ieb7mSclui.dFTN1QDLyUDN1cz
+```
+
