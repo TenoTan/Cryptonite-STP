@@ -10,6 +10,7 @@ BOOM!!!
 Here is your flag:
 pwn.college{EflXBbcFdRux-OOi_tvIojAlmMI.dhzN5QDLyUDN1czW}
 ```
+
 ## Program and Absolute Path
 This challenge involves using absolute paths. The flag lies in the `run` directory in the `challenge` directory inside the root `/`.
 The absolute paths, thus, is `/challenge/run`.
@@ -40,5 +41,40 @@ pwn.college{QL_pyrPdIpnL_5JTD4pnsu34C7B.dZDN1QDLyUDN1czW}
 
 ```
 Flag found!
+
+## Position Elsewhere
+This challenged followed same process as of the above challenge.
+```
+hacker@paths~position-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /usr/share/build-essential directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-elsewhere:~$ cd /usr/share/build-essential
+hacker@paths~position-elsewhere:/usr/share/build-essential$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{EQnT3UEbS5bFCGY69h9NXovWH3a.ddDN1QDLyUDN1czW}
+```
+
+## Position yet elsewhere
+
+Same process as the above challenge.
+
+```
+acker@paths~position-yet-elsewhere:~$ /challenge/run
+Incorrect...
+You are not currently in the /etc directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-yet-elsewhere:~$ cd /etc
+hacker@paths~position-yet-elsewhere:/etc$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{Esr_d0Q19qWtFMlJlAmXKTchwEL.dhDN1QDLyUDN1czW}
+```
+
+## implicit relative paths, from /
+
 
 
