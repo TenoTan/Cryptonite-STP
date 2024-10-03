@@ -10,7 +10,9 @@ Command: _echo_
 Argument: _Hello_
 
 The next challenge required us to enter the command _hello_ with the argument _hackers_.
-```hacker@hello~intro-to-arguments:~$ hello hackers
+```
+hacker@hello~intro-to-arguments:~$ hello hackers
 Success! Here is your flag:
 pwn.college{Mozdd6BwuHMb7zDTw8jowkzmJAc.dhjNyUDLyUDN1czW}
-hacker@hello~intro-to-arguments:~$ ```
+hacker@hello~intro-to-arguments:~$
+```
