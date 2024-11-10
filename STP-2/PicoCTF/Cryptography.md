@@ -1,4 +1,4 @@
-# spelling-quiz
+## spelling-quiz
 flag: `picoCTF{perhaps_the_dog_jumped_over_was_just_tired}`
 
 ### Approach
